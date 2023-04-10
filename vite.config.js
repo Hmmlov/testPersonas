@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     chunkSizeWarningLimit: 2000, // 1 MiB
-    target: 'es2015',
+    target: 'es2016',
     polyfillDynamicImport: false,
     minify: false,
     legacy: true,
