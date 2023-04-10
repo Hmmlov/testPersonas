@@ -1,0 +1,107 @@
+:root{
+    --color-primary: #232F3F;
+    --color-secondary: #54C0B5;
+    --color-tree: #4E5E75;
+    --font-weight-small: 100;
+}
+/* FONDO */
+
+.fondoPrincipal{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(180deg, #F1909B 0%, #BD5B70 49.34%, #983E58 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fondoLogin{
+    width: 100%;
+    height: 100%;
+    /* min-height: 85%; */
+    background: var(--color-primary);
+    color: white;
+    /* border-radius: 1.5rem; */
+    overflow: hidden;
+}
+.fondoImagen{
+    background-image: url('../img/fondoLogin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 1.5rem 0 0 1.5rem ;
+}
+
+
+/* BOTONES HEADER */
+/* sin uso */
+.botones{
+    display: flex;
+    justify-content: end;
+    margin: 4rem 0 0 0;
+}
+.btn{
+    border: none;
+    padding: .6rem 2rem;
+    font-weight: var(--font-weight-small);
+}
+.btn:hover{
+    opacity: .8;
+}
+.btnLeft{
+    border-radius: 1.5rem 0 0 1.5rem;
+    background-color: var(--color-tree);
+}
+.btnRight{
+    border-radius: 0 1.5rem 1.5rem 0;
+    background-color: var(--color-secondary);
+}
+
+/* FORMULARIO */
+.formulario{
+    padding: 15rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    scroll-snap-stop: initial;
+}
+.tituloForm{
+    font-weight: var(--font-weight-small);
+    margin-bottom: 2rem;
+}
+.subtituloForm{
+    font-weight: var(--font-weight-small);
+    margin-bottom: 2rem;
+}
+.tituloFormColegio{
+    font-weight: var(--font-weight-small);
+    margin-bottom: 3rem;
+}
+.form{
+    text-align: start;
+}
+.btnLogin{
+    width: 18rem;
+    border-radius: 1.5rem;
+    margin: 4rem 0 4rem 0 ;
+    background-color: var(--color-secondary);
+    font-size: 1.2rem;
+}
+.inputLogin{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid var(--color-tree);
+    padding-left: 0;
+    color: white;
+    font-size: 1.1rem;
+}
+.inputLogin:focus{
+    background-color: transparent;
+    color: white;
+
+}
+.labelLogin{
+    font-size: 1.3rem;
+}
+
