@@ -5,11 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    rollupOptions: {
-      output: {
-        legacy: true,
-        // Agrega aquí cualquier otra opción que necesites para configurar Rollup
-      }
-    }
+    chunkSizeWarningLimit: 2000, // 1 MiB
   }
 })
